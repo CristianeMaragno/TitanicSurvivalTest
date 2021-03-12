@@ -1,0 +1,28 @@
+body{
+    background-color: #011638;
+}
+
+.main-div{
+    background-color: #364156;
+    margin: 50px;
+    padding-bottom: 50px;
+}
+
+.header-text{
+    margin: 50px;
+    padding-top: 30px;
+    color: white;
+}
+
+.form-div{
+    margin: 50px;
+    color: white;
+}
+
+.result-button{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 200px;
+    background-color:  #011638;
+    border-color: #011638;
+}

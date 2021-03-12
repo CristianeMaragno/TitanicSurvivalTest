@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="Cristiane Maragno">
+      <title>Titanic Survival Test</title>
+
+      <!-- Bootstrap -->
+      <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='css/css/bootstrap.css') }}">
+
+      <!-- Styles -->
+      <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='css/style.css') }}">
+   </head>
+ 
+   <body>
+         <div class="main-div">
+            <div class="header-text">
+               <h1>Would you survive the Titanic sinking?</h1>
+               <p>The RMS Titanic sank in the early morning hours of 15 April 1912 in the North Atlantic Ocean, four days into her maiden voyage from Southampton to New York City. The largest ocean liner in service at the time, Titanic had an estimated 2,224 people on board when she struck an iceberg at around 23:40 (ship's time) on Sunday, 14 April 1912. </p>
+               <p>Anwser some questions and a machine learning model will say if you would have or not survivived!</p>
+            </div>
+
+            <div class="form-div">
+               <form action = "http://127.0.0.1:5000/results" method = "POST">
+                  <div class="form-group">
+                    <label for="PassengerId">Between 1 and 100, which you consider your lucky number?</label>
+                    <input type = "text" name = "PassengerId" class="form-control" placeholder="Enter you lucky number">
+                  </div>
+                  <div class="form-group">
+                     <label for="Pclass">When you travel, in which class you travel? 1,2 or 3?</label>
+                     <input type = "text" name = "Pclass" class="form-control" placeholder="Enter your ticket class">
+                  </div>
+                  <div class="form-group">
+                     <label for="Age">What's your age?</label>
+                     <input type = "text" name = "Age" class="form-control" placeholder="Enter your age">
+                  </div>
+                  <div class="form-group">
+                     <label for="SibSp">When you travel, do you take a spouse and/or sibling? If yes, how many?</label>
+                     <input type = "text" name = "SibSp" class="form-control" placeholder="Enter the number of spouse/siblings">
+                  </div>
+                  <div class="form-group">
+                     <label for="Parch">When you travel, do you take your parents and/or your children? If yes, how many?</label>
+                     <input type = "text" name = "Parch" class="form-control" placeholder="Enter the number of parents/children">
+                  </div>
+                  <div class="form-group">
+                     <label for="Fare">How much can you pay for a leisure travel in ocean?</label>
+                     <input type = "text" name = "Fare" class="form-control" placeholder="Enter your ticket value">
+                  </div>
+                  <div class="form-group">
+                     <label for="male">What's your gender?</label>
+                     <input type = "text" name = "male" class="form-control" placeholder="Enter your gender">
+                  </div>
+                  <div class="form-group">
+                     <label for="Q">Do you prefer the rainy and charming UK or the beatiful cenaries of New Zeland?</label>
+                     <input type = "text" name = "Q" class="form-control" placeholder="Enter your preference">
+                  </div>
+                  <div class="form-group">
+                     <label for="S">Do you prefer the rainy and charming UK or the beatiful cenaries of New Zeland?</label>
+                     <input type = "text" name = "S" class="form-control" placeholder="Enter your preference">
+                  </div>
+                  <button type="submit" value="Submit" class="btn btn-primary result-button">My result</button>
+                </form>
+
+            </div>
+         </div>
+   </body>
+</html>

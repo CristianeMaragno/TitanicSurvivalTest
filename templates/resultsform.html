@@ -1,0 +1,24 @@
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="Cristiane Maragno">
+      <title>Titanic Survival Test</title>
+
+      <!-- Bootstrap -->
+      <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='css/css/bootstrap.css') }}">
+
+      <!-- Styles -->
+      <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='css/style.css') }}">
+   </head>
+ 
+   <body>
+         <div class="main-div">
+            <div class="header-text">
+               <h1>Survival test result:</h3>
+               <p>This is the predicted result of your survival test: <strong>{{ predicted_value}}</strong>).</p>
+            </div>
+
+        </div>
+    </body>
+</html>
